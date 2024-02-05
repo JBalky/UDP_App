@@ -10,7 +10,7 @@ public class Main {
             // URI uri = new URI("http://localhost:8080/index.html");
 
             // If you're opening the file directly (make sure the path is correct):
-            File htmlFile = new File("/Users/wpiadmin/IdeaProjects/UDP_App/src/main/resources/Home.html");
+            File htmlFile = new File("/Users/wpiadmin/IdeaProjects/UDP_App/src/main/resources/Map.html");
             URI uri = htmlFile.toURI();
 
             if (Desktop.isDesktopSupported()) {
