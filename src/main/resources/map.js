@@ -12,14 +12,15 @@ var latlngs = [
 
 var polyline = L.polyline(latlngs, {color: 'red', weight: 10, interactive: true}).addTo(map);
 //polyline.bindPopup('Happy Sunday').openPopup({ closePopupOnClick: false });
-var popupContent = '<b>Restaurant Name</b><br><img src="images/SCP-Logo.png" alt="Image">';
+var popupContent = '<b>Queens Road Central</b><br><img src="images/Queens_Road.png" alt="Image" style="width: 100%; height: auto">'
 var popupOpen = false; // Flag to track the popup state
 
 polyline.on('mouseover', function(e){
-    var tempPopup = L.popup()
-        .setLatLng(e.latlng)
-        .setContent(popupContent)
-        .openOn(map);
+    if (!popupOpen)
+        var tempPopup = L.popup()
+            .setLatLng(e.latlng)
+            .setContent("Queen's Road Central")
+            .openOn(map);
 });
 
 polyline.on('mouseout', function(e) {
@@ -30,9 +31,9 @@ polyline.on('mouseout', function(e) {
 
 polyline.on('click', function(e) {
     var clickLatlng = e.latlng; // Get the latitude and longitude where the polyline was clicked
-    var popup = L.popup()
+    var popup = L.popup ({minWidth: 600})
         .setLatLng(clickLatlng) // Set the popup at the click location
-        .setContent('Happy Sunday')
+        .setContent(popupContent)
         .openOn(map); // Open the popup on the map
             popupOpen = !popupOpen;
     if (popupOpen) {
