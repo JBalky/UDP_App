@@ -6,13 +6,40 @@
           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
           crossorigin=""/>
     <link rel="stylesheet" href="interactiveMap.css"/>
+    <style>
+        /* Styles for the tabs */
+        .leaflet-popup-content {
+            width: 400px; /* Adjust the width as needed */
+        }
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 <div id="map" style="width: 100%; height: 800px;"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
+
 <script src="map.js"></script>
+
+<!-- This is where the popup template should be placed -->
+<div id="popup-template" style="display: none;">
+    <div class="tabs">
+        <button class="tab-button" data-tab="tab1">Tab 1</button>
+        <button class="tab-button" data-tab="tab2">Tab 2</button>
+    </div>
+    <div class="tab" id="tab1">
+        Content for Tab 1
+    </div>
+    <div class="tab" id="tab2">
+        Content for Tab 2
+    </div>
+</div>
 
 </body>
 </html>
