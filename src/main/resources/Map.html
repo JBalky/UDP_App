@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Map Path Finder</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIiDnpFOJaLW11WPMsJh4Dl0oK3iLdQzo&callback=initMap&libraries=places" async defer></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <input id="start" type="text" placeholder="Enter starting point">
+    <input id="end" type="text" placeholder="Enter destination">
+    <button onclick="calculateAndDisplayRoute()">Show Path</button>
+    <div id="map"></div>
+    <script src="static/Map.js"></script>
+</body>
+</html>

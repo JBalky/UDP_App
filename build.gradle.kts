@@ -10,9 +10,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.9.1"))
+    testImplementation(platform("org.junit:junit-bom:5.10.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation ("org.mongodb:mongodb-driver-sync:4.11.1")
+    implementation ("org.slf4j:slf4j-api:2.0.12")
 }
 
 tasks.test {
