@@ -4,10 +4,10 @@ let accessibilityEnabled = false; // Track accessibility toggle state
 let streetRankings = [];
 
 
-function initMap() {
+function initMap(callback) {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 22.281929805768996, lng: 114.15822437981622 },
-        zoom: 16,
+        center: { lat: 22.282890, lng: 114.153694 },
+        zoom: 18,
     });
 
     directionsService = new google.maps.DirectionsService();
@@ -232,7 +232,7 @@ function initMap() {
                 content: contentString,
             });
 
-            infowindow.setPosition(street.coordinates[0]); // Adjust as needed
+            infowindow.setPosition(event.latLng); // Adjust as needed
             infowindow.open(map);
         });
     });
