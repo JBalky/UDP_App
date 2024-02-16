@@ -349,48 +349,6 @@ function integrateStreetRankingsWithSegmentation(routePath) {
     console.log("Integration complete.");
 }
 
-// function adjustRouteForAccessibility(originalRoute) {
-//     scoredSegments = segmentMapAndAssignScores();
-//     // Placeholder: Logic to adjust the route based on street rankings and current location.
-//     // This is a complex problem that would involve analyzing the route's steps,
-//     // matching them with the streets in your rankings, and potentially recalculating
-//     // segments of the route based on the rankings.
-//     // For now, we'll log a message indicating this function should be implemented.
-//     console.log("Adjusting route for accessibility...");
-// }
-
-// function calculateAndDisplayRoute() {
-//     const start = document.getElementById('start').value;
-//     const end = document.getElementById('end').value;
-//
-//     directionsService.route({
-//         origin: start,
-//         destination: end,
-//         travelMode: google.maps.TravelMode.WALKING,
-//     }, (response, status) => {
-//         if (status === 'OK') {
-//             if (accessibilityEnabled) {
-//                 adjustRouteForAccessibility(response);
-//                 // Set the directions renderer to display the route in red
-//                 directionsRenderer.setOptions({
-//                     polylineOptions: {
-//                         strokeColor: 'red'
-//                     }
-//                 });
-//             } else {
-//                 // Set the directions renderer to display the route in the default color
-//                 directionsRenderer.setOptions({
-//                     polylineOptions: {
-//                         strokeColor: 'blue ' // default color
-//                     }
-//                 });
-//             }
-//             directionsRenderer.setDirections(response);
-//         } else {
-//             window.alert('Directions request failed due to ' + status);
-//         }
-//     });
-// }
 
 function calculateAndDisplayRoute() {
     console.log("Calculating and displaying route...");
@@ -433,43 +391,6 @@ function calculateAndDisplayRoute() {
         }
     });
 }
-
-
-
-// // This function assumes you have the start and end points as Google Maps LatLng objects
-// function segmentMap(startPoint, endPoint, gridSize) {
-//     // Convert grid size from meters to degrees
-//     const gridSizeInDegrees = convertMetersToDegrees(gridSize);
-//
-//     // Determine the bounds of the grid
-//     const bounds = new google.maps.LatLngBounds();
-//     bounds.extend(startPoint);
-//     bounds.extend(endPoint);
-//
-//     // Calculate the number of grid cells needed
-//     const startLatLng = { lat: startPoint.lat(), lng: startPoint.lng() };
-//     const endLatLng = { lat: endPoint.lat(), lng: endPoint.lng() };
-//     const gridWidth = Math.ceil(Math.abs(startLatLng.lng - endLatLng.lng) / gridSizeInDegrees.lng);
-//     const gridHeight = Math.ceil(Math.abs(startLatLng.lat - endLatLng.lat) / gridSizeInDegrees.lat);
-//
-//     // Initialize grid with empty values
-//     const grid = Array.from({ length: gridHeight }, () =>
-//         Array.from({ length: gridWidth }, () => ({
-//             streets: [],
-//             accessibilityScore: 0,
-//         }))
-//     );
-
-    // Populate the grid with streets and calculate accessibility scores
-    // This step is complex and involves checking which streets intersect with each grid cell
-    // and then assigning an accessibility score to the cell based on the rankings
-    // This is where you'd use the streetRankings data
-    // ...
-
-//     return grid;
-// }
-
-
 
 // Helper function to convert meters to latitude and longitude degrees
 function convertMetersToDegrees(gridSize) {
