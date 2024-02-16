@@ -3,7 +3,6 @@ let startInput, endInput;
 let accessibilityEnabled = false; // Track accessibility toggle state
 let streetRankings = [];
 
-
 function initMap(callback) {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 22.282890, lng: 114.153694 },
@@ -28,9 +27,9 @@ function initMap(callback) {
         console.log(`Accessibility is now ${accessibilityEnabled ? "enabled" : "disabled"}.`);
         calculateAndDisplayRoute();
 
-        if (accessibilityEnabled) {
-            await fetchAndStoreStreetRankings();
-        }
+        // if (accessibilityEnabled) {
+        //     await fetchAndStoreStreetRankings();
+        // }
     });
 
     let streets = [
@@ -308,48 +307,6 @@ function initMap(callback) {
     });
 }
 
-
-async function fetchAndStoreStreetRankings() {
-    console.log("Fetching street rankings...");
-    try {
-        const response = await fetch('http://localhost:3000/getStreetRankings');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        streetRankings = await response.json();
-        streetRankings.sort((a, b) => b.rank - a.rank);
-        console.log("Fetched and sorted street rankings: ", streetRankings);
-    } catch (error) {
-        console.error('Error fetching street rankings:', error);
-    }
-}
-
-function integrateStreetRankingsWithSegmentation(routePath) {
-    console.log("Integrating street rankings with segmentation...");
-    if (!streetRankings.length) {
-        console.log("No street rankings available to integrate.");
-        return;
-    }
-    const proximityThreshold = 100; // meters
-    streetRankings.forEach(street => {
-        const streetLatLng = new google.maps.LatLng(street.lat, street.lng);
-        let isNearRoute = false;
-        for (let i = 0; i < routePath.length; i++) {
-            const routePoint = routePath[i];
-            const distance = google.maps.geometry.spherical.computeDistanceBetween(streetLatLng, routePoint);
-            if (distance < proximityThreshold) {
-                isNearRoute = true;
-                break;
-            }
-        }
-        if (isNearRoute) {
-            console.log(`Street near route: ${street.name}, Rank: ${street.rank}`);
-        }
-    });
-    console.log("Integration complete.");
-}
-
-
 function calculateAndDisplayRoute() {
     console.log("Calculating and displaying route...");
     const start = document.getElementById('start').value;
@@ -391,6 +348,50 @@ function calculateAndDisplayRoute() {
         }
     });
 }
+
+
+// async function fetchAndStoreStreetRankings() {
+//     console.log("Fetching street rankings...");
+//     try {
+//         const response = await fetch('http://localhost:3000/getStreetRankings');
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
+//         streetRankings = await response.json();
+//         streetRankings.sort((a, b) => b.rank - a.rank);
+//         console.log("Fetched and sorted street rankings: ", streetRankings);
+//     } catch (error) {
+//         console.error('Error fetching street rankings:', error);
+//     }
+// }
+
+function integrateStreetRankingsWithSegmentation(routePath) {
+    console.log("Integrating street rankings with segmentation...");
+    if (!streetRankings.length) {
+        console.log("No street rankings available to integrate.");
+        return;
+    }
+    const proximityThreshold = 100; // meters
+    streetRankings.forEach(street => {
+        const streetLatLng = new google.maps.LatLng(street.lat, street.lng);
+        let isNearRoute = false;
+        for (let i = 0; i < routePath.length; i++) {
+            const routePoint = routePath[i];
+            const distance = google.maps.geometry.spherical.computeDistanceBetween(streetLatLng, routePoint);
+            if (distance < proximityThreshold) {
+                isNearRoute = true;
+                break;
+            }
+        }
+        if (isNearRoute) {
+            console.log(`Street near route: ${street.name}, Rank: ${street.rank}`);
+        }
+    });
+    console.log("Integration complete.");
+}
+
+
+
 
 // Helper function to convert meters to latitude and longitude degrees
 function convertMetersToDegrees(gridSize) {
