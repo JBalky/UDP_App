@@ -40,9 +40,9 @@ function initMap(callback) {
                 {lat: 22.28293, lng: 114.15559},
                 {lat: 22.28351, lng: 114.15513},
                 {lat: 22.28422, lng: 114.15415}
-        ],
-        description: "One of the busiest commerical areas in Hong Kong and contains many commerical buildings as well as restaurants and shopping. This includes the Central Market and  The Center office building.",
-        history: "Queens Road Central holds a pivotal place in Hong Kong's colonial history as one of the earliest roads laid down in the 1840s during the British occupation. It was named after Queen Victoria and originally formed the shoreline of Hong Kong Island before land reclamation efforts pushed the coast further north. This road has witnessed the transformation of Hong Kong from a modest trading outpost to the bustling financial hub it is today, retaining its status as a key commercial artery in the heart of the city."
+            ],
+            description: "One of the busiest commerical areas in Hong Kong and contains many commerical buildings as well as restaurants and shopping. This includes the Central Market and  The Center office building.",
+            history: "Queens Road Central holds a pivotal place in Hong Kong's colonial history as one of the earliest roads laid down in the 1840s during the British occupation. It was named after Queen Victoria and originally formed the shoreline of Hong Kong Island before land reclamation efforts pushed the coast further north. This road has witnessed the transformation of Hong Kong from a modest trading outpost to the bustling financial hub it is today, retaining its status as a key commercial artery in the heart of the city."
         },
 
         {   name: "Stanley Street",
@@ -98,8 +98,8 @@ function initMap(callback) {
         {   name: "Peel Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.282385, lng: 114.152364},
-            {lat: 22.284167, lng: 114.154199}],
+                {lat: 22.282385, lng: 114.152364},
+                {lat: 22.284167, lng: 114.154199}],
             description: "Peel Street in Central Hong Kong's SoHo district offers a vibrant mix of dining and nightlife, highlighted by its proximity to the Mid-Levels Escalator and Man Mo Temple. This bustling street is known for its diverse eateries and bars, making it a lively spot for food enthusiasts and night owls alike.",
             history: "Peel Street, with a name derived from British Prime Minister Sir Robert Peel, is steeped in the history of Hong Kong's trade and industry. Historically a residential area, it evolved to host a bustling marketplace as the city's population grew. The street has seen the ebb and flow of daily commerce for over a century and remains a testament to the enduring spirit of the city's local businesses and the adaptability of its historic neighborhoods."
         },
@@ -108,8 +108,8 @@ function initMap(callback) {
         {   name: "Graham Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.283954, lng: 114.154521},
-            {lat: 22.282142, lng: 114.152638}],
+                {lat: 22.283954, lng: 114.154521},
+                {lat: 22.282142, lng: 114.152638}],
             description: "Graham Street, nestled in Central Hong Kong, is famous for its historic Graham Street Market, one of the city's oldest street markets. Offering fresh produce and local delicacies, it's a lively hub for experiencing Hong Kong's culinary culture. The street's close proximity to the Mid-Levels Escalator also makes it easily accessible for exploring the surrounding SoHo district's dining and shopping options.",
             history: "Graham Street has been the lifeblood of Central Hong Kong's marketplace scene since the 1840s, making its Graham Street Market one of the oldest surviving street markets in the city. Named after Captain James Graham, this street has sustained generations of locals with its fresh produce and vibrant community, witnessing Hong Kong's transformation from a colonial port to a major global metropolis."
         },
@@ -118,8 +118,8 @@ function initMap(callback) {
         {   name: "Gutzlaff Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.282554, lng: 114.153346},
-            {lat: 22.283621, lng: 114.154446}],
+                {lat: 22.282554, lng: 114.153346},
+                {lat: 22.283621, lng: 114.154446}],
             description: "Gutzlaff Street, a quaint pathway in Central Hong Kong, is renowned for its intimate dining spots and unique charm. Easily accessible via the Mid-Levels Escalator, it provides a serene escape from the city's hustle and bustle. The street is a stone's throw away from the vibrant SoHo district, making it a convenient spot for exploring nearby culinary and cultural attractions.",
             history: "Gutzlaff Street, named after the 19th-century missionary Karl Gutzlaff, has a rich legacy as a cross-cultural meeting ground. Known for its proximity to the former Victoria Prison, the oldest in Hong Kong, the street has seen a diverse tapestry of residents and visitors, reflecting the complex interweaving of international influences that have shaped the city's unique character."
         },
@@ -128,9 +128,9 @@ function initMap(callback) {
         {   name: "Lyndhurst Terrace",
             color: 'blue',
             coordinates: [
-            {lat: 22.28244, lng: 114.154961},
-            {lat: 22.282532, lng: 114.153922},
-            {lat: 22.282569, lng: 114.153063}],
+                {lat: 22.28244, lng: 114.154961},
+                {lat: 22.282532, lng: 114.153922},
+                {lat: 22.282569, lng: 114.153063}],
             description: "Lyndhurst Terrace, located in the heart of Central Hong Kong, is a bustling street known for its eclectic mix of shops, art galleries, and cafes. Directly accessible via the Mid-Levels Escalator, this street offers a vibrant shopping and dining experience, with easy access to nearby landmarks like the historic Man Mo Temple and the lively entertainment area of Lan Kwai Fong.",
             history: "Lyndhurst Terrace traces its roots back to the 19th century and is named after Lyndhurst Hall in Hampshire, England. It stands as a witness to the city's colonial past and its evolution into a modern financial center. The street has seen the rise of commercial establishments and was once the site of the famous Tiger Balm Garden, showcasing the eclectic influence of traditional Chinese and modern Western cultures in the fabric of Hong Kong."
         },
@@ -139,8 +139,8 @@ function initMap(callback) {
         {   name: "Ezra Lane",
             color: 'blue',
             coordinates: [
-            {lat: 22.281993, lng: 114.154628},
-            {lat: 22.282217, lng: 114.153904}],
+                {lat: 22.281993, lng: 114.154628},
+                {lat: 22.282217, lng: 114.153904}],
             description: "Ezra Lane, a hidden gem in Central Hong Kong, offers a quiet respite from the city's hustle. Tucked away near the Mid-Levels Escalator, this narrow alley is known for its intimate cafes and specialty shops, providing a unique, serene shopping and dining experience. Its close proximity to the vibrant SoHo district and the historic Man Mo Temple adds to its appeal, making it a must-visit for those exploring the area's rich tapestry of culture and history.",
             history: "Ezra Lane may be easy to miss in the bustling streets of Central Hong Kong, but its discreet charm harks back to the days when it was a refuge for artists and writers in the city's burgeoning cultural scene. This narrow passageway, likely named after a prominent local figure or family, has retained its quiet allure amidst the urban rush, providing a snapshot into the contemplative side of Hong Kong's past."
         },
@@ -149,9 +149,9 @@ function initMap(callback) {
         {   name: "Cochrane Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.282003, lng: 114.153855},
-            {lat: 22.282599, lng: 114.153952},
-            {lat: 22.283621, lng: 114.154961}],
+                {lat: 22.282003, lng: 114.153855},
+                {lat: 22.282599, lng: 114.153952},
+                {lat: 22.283621, lng: 114.154961}],
             description: "Cochrane Street, stretching up the steep incline from Central to the Mid-Levels, is bustling with activity. It's lined with a variety of shops, local eateries, and the entrance to the Mid-Levels Escalator, making it a vital conduit for pedestrians. This street is not just a shopper's paradise but also a convenient starting point for visiting nearby attractions like the lively Lan Kwai Fong, the tranquil Hong Kong Park, and the educational Dr. Sun Yat-sen Museum, offering a comprehensive experience of Hong Kong's dynamic urban life.",
             history: "Cochrane Street, climbing steeply from Central towards the Mid-Levels, was named after Thomas Cochrane, the 10th Earl of Dundonald, a naval figure of the Napoleonic Wars. The street's history is marked by its role in easing congestion in the growing colonial city, and today it stands lined with modern shops, yet its sloping path still echoes with the footsteps of its 19th-century origins."
         },
@@ -160,8 +160,8 @@ function initMap(callback) {
         {   name: "Old Bailey Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.282023, lng: 114.153861},
-            {lat: 22.280584, lng: 114.153045}],
+                {lat: 22.282023, lng: 114.153861},
+                {lat: 22.280584, lng: 114.153045}],
             description: "Old Bailey Street, tucked away in the SoHo district of Central Hong Kong, is steeped in history and ambiance. This narrow street is best known for its tranquil atmosphere, offering a quieter dining and shopping experience away from the city's hustle. Key attractions nearby include the Tai Kwun Centre for Heritage and Arts, a revitalized colonial-era prison and police station complex, and the serene Hollywood Road Park, making it a cultural and peaceful retreat within the urban landscape.",
             history: "Old Bailey Street has a storied past, once flanking the Central Prison, Hong Kong's first jail, established in the mid-19th century. Named after the famous street in London known for the Old Bailey courthouse, it has been a silent observer to the tales of reformation and justice. Today, it serves as a cultural corridor leading to the Tai Kwun Centre for Heritage and Arts, preserving its link to legal history while embracing contemporary culture."
         },
@@ -170,10 +170,10 @@ function initMap(callback) {
         {   name: "Shelley Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.282187, lng: 114.153475},
-            {lat: 22.280961, lng: 114.152343}],
+                {lat: 22.282187, lng: 114.153475},
+                {lat: 22.280961, lng: 114.152343}],
             description: "Shelley Street, renowned for its part in the Central-Mid-Levels Escalator system, is a bustling thoroughfare that offers a unique blend of modernity and tradition. The street is lined with a variety of restaurants and bars, making it a popular spot for both locals and tourists. Its accessibility via the world's longest outdoor covered escalator system allows for easy exploration of the surrounding SoHo district, with landmarks like the Man Mo Temple and the vibrant PMQ arts hub just a short walk away.",
-                //"Named after Adolphus Edward Shelley who was a British colonial administrator. It was orginally inhabited by Portuguese people working as clerks for larger British companies. This street also contained was the orginal location of The Club Lusitano which was a club established by prominent Portugese merchants. The club still exists today but has since moved to Ice House Street. Shelly st is also part of the central-mid-levels escalators network which opened on the street in 1993."
+            //"Named after Adolphus Edward Shelley who was a British colonial administrator. It was orginally inhabited by Portuguese people working as clerks for larger British companies. This street also contained was the orginal location of The Club Lusitano which was a club established by prominent Portugese merchants. The club still exists today but has since moved to Ice House Street. Shelly st is also part of the central-mid-levels escalators network which opened on the street in 1993."
             history: "Shelley Street's claim to historical fame lies in its inclusion in the Central-Mid-Levels escalator system, the longest of its kind in the world. The street, possibly named after Percy Bysshe Shelley, the English poet, has evolved from a residential lane to a vibrant artery pulsating with the energy of restaurants and bars, connecting the traditions of old Hong Kong with the innovative spirit of the present."
         },
 
@@ -181,8 +181,8 @@ function initMap(callback) {
         {   name: "Elgin Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.28314, lng: 114.15271},
-            {lat: 22.282448, lng: 114.152286}],
+                {lat: 22.28314, lng: 114.15271},
+                {lat: 22.282448, lng: 114.152286}],
             description: "Elgin Street, a lively destination in the heart of SoHo, Central Hong Kong, is famous for its vibrant dining scene, featuring an array of international cuisines and local favorites. This street's energetic nightlife and cultural offerings draw a diverse crowd, with easy access to the Mid-Levels Escalator enhancing its appeal. Nearby landmarks include the historic Man Mo Temple and the PMQ, offering a mix of cultural experiences, shopping, and dining options that highlight the dynamic spirit of Hong Kong.",
             history: "Elgin Street, named after James Bruce, the 8th Earl of Elgin, is a testament to the cosmopolitan legacy of Hong Kong. Historically a residential area, it has transformed into a lively dining hub, reflecting the city's evolution from a colonial outpost to a global metropolis. Its alignment with the arts and dining scene captures the essence of Hong Kong's continuous adaptation and cultural fusion."
         },
@@ -191,8 +191,8 @@ function initMap(callback) {
         {   name: "Tsung Wing Lane",
             color: 'blue',
             coordinates: [
-            {lat: 22.282237, lng: 114.15274},
-            {lat: 22.281854, lng: 114.153171}],
+                {lat: 22.282237, lng: 114.15274},
+                {lat: 22.281854, lng: 114.153171}],
             description: "Tsung Wing Lane, nestled in the bustling district of Central Hong Kong, is a hidden gem known for its architectural intrigue and quaint ambiance. This narrow alleyway, less traversed by the typical tourist, offers a glimpse into the quieter side of city life. It's a short distance from the vibrant SoHo area and the historic Man Mo Temple, making it a peaceful detour amidst the urban excitement, ideal for those seeking solace from the city's frenetic pace.",
             history: "Tsung Wing Lane, with its discreet presence in the heart of Central, echoes the quieter aspects of Hong Kong's history. This lane, named after a notable figure or concept lost to time, has witnessed the ebb and flow of daily life against the backdrop of the city's rapid urban development. Its secluded location offers a rare glimpse into the intimate side of city living, amidst the shadows of towering skyscrapers."
         },
@@ -201,8 +201,8 @@ function initMap(callback) {
         {   name: "Staveley Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.284004, lng: 114.153759},
-            {lat: 22.283698, lng: 114.153456}],
+                {lat: 22.284004, lng: 114.153759},
+                {lat: 22.283698, lng: 114.153456}],
             description: "Staveley Street, situated in the vibrant Central district, is a small yet significant street that captures the essence of Hong Kong's rich history and modern evolution. Known for its proximity to the Central Police Station compound, now the Tai Kwun Centre for Heritage and Arts, Staveley Street offers cultural enthusiasts a convenient base to explore this major arts and leisure destination. Its location offers an intimate look at the architectural transformation from colonial Hong Kong to its current cosmopolitan identity.",
             history: "Staveley Street, a small but historically significant thoroughfare, is named after a British military officer, showcasing the colonial military influence on Hong Kong's urban landscape. This street has seen the transformation of its surrounding area from a strategic military outpost to a vibrant cultural district, housing the Tai Kwun Centre for Heritage and Arts, a symbol of the adaptive reuse of historical sites in modern Hong Kong."
         },
@@ -211,8 +211,8 @@ function initMap(callback) {
         {   name: "Sam Ka Lane",
             color: 'blue',
             coordinates: [
-            {lat: 22.283800, lng: 114.152809},
-            {lat: 22.283383, lng: 114.153104}],
+                {lat: 22.283800, lng: 114.152809},
+                {lat: 22.283383, lng: 114.153104}],
             description: "Sam Ka Lane, a discreet alley in Central Hong Kong, is a testament to the area's historical depth and cultural layers. Close to the traditional markets of Graham Street, it provides a stark contrast to the nearby modern developments. This lane is a fascinating spot for those interested in the everyday life and rhythms of local residents, set against the backdrop of Hong Kong's rapid urban development. Nearby attractions like the PMQ and Hollywood Road provide ample opportunity for exploration into the city's artistic and historical narratives.",
             history: "Sam Ka Lane, nestled in the heart of Central, carries the legacy of Hong Kong's vibrant maritime trade. Historically a gathering place for sailors and traders, the lane was a focal point for commerce and exchange, contributing to the area's development as a bustling port. Today, it stands as a reminder of the city's rich trading history, juxtaposed against its modern financial skyline. Its name, meaning 'Three Streets Lane,' hints at the interconnectedness of community life in the city's past, where small alleys like this were the lifelines of local economies and social interaction."
         },
@@ -221,8 +221,8 @@ function initMap(callback) {
         {   name: "Jubilee Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.283808, lng: 114.154727},
-            {lat: 22.284532, lng: 114.155685}],
+                {lat: 22.283808, lng: 114.154727},
+                {lat: 22.284532, lng: 114.155685}],
             description: "Jubilee Street, in the heart of Central Hong Kong, stands out for its blend of commercial vibrancy and historical significance. This street is a hub for business and leisure, with easy access to the nearby IFC Mall and the Central Ferry Piers, offering stunning views of Victoria Harbour. Jubilee Street's proximity to the historic Central Market, an Art Deco building currently being revitalized, adds a cultural dimension to this bustling area, making it a key spot for those who appreciate both modernity and heritage.",
             history: "Jubilee Street, commemorating Queen Victoria's Diamond Jubilee in 1897, is a significant thoroughfare in Central Hong Kong that has evolved alongside the city itself. Once a residential street housing British officials and local workers, it has grown into a major commercial avenue. The street's transformation is emblematic of Hong Kong's rapid development from a colonial era into its present-day status as a global financial hub."
         },
@@ -231,8 +231,8 @@ function initMap(callback) {
         {   name: "Queen Victoria Street",
             color: 'blue',
             coordinates: [
-            {lat: 22.28351, lng: 114.155132},
-            {lat: 22.284128, lng: 114.156023}],
+                {lat: 22.28351, lng: 114.155132},
+                {lat: 22.284128, lng: 114.156023}],
             description: "Queen Victoria Street is characterized by its quiet charm amidst the bustling district of Central Hong Kong. Known for its architectural diversity, the street is a stone's throw away from the lively Lan Kwai Fong and SoHo districts, offering a retreat from the city's nightlife. Its location offers easy access to cultural landmarks such as the PMQ and the Dr. Sun Yat-sen Museum, providing a tranquil corridor for those interested in exploring the quieter side of Hong Kong's rich urban tapestry.",
             history: "Queen Victoria Street, named in honor of the British monarch, is steeped in the colonial history of Hong Kong. Running through the heart of the Central district, this street was pivotal in the 19th century for connecting key commercial areas with the administrative centers of the British colonial government. Over the years, it has transformed into a bustling commercial artery, yet it retains historical buildings that serve as reminders of its colonial past, standing amidst modern skyscrapers and illustrating the city's unique blend of Eastern and Western influences."
         },
@@ -241,18 +241,18 @@ function initMap(callback) {
         {   name: "Hollywood Road",
             color: 'blue',
             coordinates: [
-            {lat: 22.283875, lng: 114.151726},
-            {lat: 22.283755, lng: 114.152112},
-            {lat: 22.283527, lng: 114.152466},
-            {lat: 22.282475, lng: 114.153121},
-            {lat: 22.282207, lng: 114.153432},
-            {lat: 22.282011, lng: 114.153866},
-            {lat: 22.281827, lng: 114.154502}],
+                {lat: 22.283875, lng: 114.151726},
+                {lat: 22.283755, lng: 114.152112},
+                {lat: 22.283527, lng: 114.152466},
+                {lat: 22.282475, lng: 114.153121},
+                {lat: 22.282207, lng: 114.153432},
+                {lat: 22.282011, lng: 114.153866},
+                {lat: 22.281827, lng: 114.154502}],
             description: "Hollywood Road, one of Hong Kong's oldest streets, is renowned for its antique shops and art galleries, making it a cultural artery in the heart of the city. Stretching through Sheung Wan and Central, it offers a unique journey through Hong Kong's history, with landmarks like the Man Mo Temple and the former Central Police Station, now Tai Kwun, where art meets heritage. The vibrant street murals and trendy cafes interspersed among traditional establishments make Hollywood Road a must-visit for art lovers and history buffs alike, offering a colorful mosaic of Hong Kong's past and present.",
             history: "Hollywood Road, one of the first roads built by the British in Hong Kong after the colony was established in 1842, is renowned for its antique shops and art galleries. This historic road was named for its holly trees, not the famous California district, and quickly became a central marketplace for Chinese antiques and artifacts. Notably, it is home to the Man Mo Temple, a significant Taoist temple dedicated to the God of Literature (Man) and the God of War (Mo), dating back to the 1840s. Hollywood Road's rich history and cultural significance make it a fascinating snapshot of Hong Kong's transition from a colonial port to a global metropolis, embodying the city's tradition of cultural preservation amidst rapid urban development."
         }
 
-];
+    ];
 
     function toggleDescription(streetName, type) {
         const street = streets.find(s => s.name.replace(/\s+/g, '') === streetName);
@@ -336,7 +336,7 @@ function initMap(callback) {
     // Example triangle data (simplified)
     let triangles = [
         {
-        name: "Central Market",
+            name: "Central Market",
             color: "red",
             coordinates: [
                 {lat: 22.28444, lng: 114.155679},
@@ -349,8 +349,8 @@ function initMap(callback) {
         {name: "PMQ",
             color: 'red',
             coordinates: [
-            {lat: 22.283388, lng: 114.151302},
-            {lat: 22.282924, lng: 114.151855},
+                {lat: 22.283388, lng: 114.151302},
+                {lat: 22.282924, lng: 114.151855},
                 {lat: 22.283475, lng: 114.152412},
                 {lat: 22.283631, lng: 114.152225},
                 {lat: 22.283721, lng: 114.152077},
@@ -361,9 +361,9 @@ function initMap(callback) {
         { name: "Tai Kwun",
             color: 'red',
             coordinates: [
-            {lat: 22.281969, lng: 114.15388},
-            {lat: 22.281797, lng: 114.154486},
-            {lat: 22.28174, lng: 114.154625},
+                {lat: 22.281969, lng: 114.15388},
+                {lat: 22.281797, lng: 114.154486},
+                {lat: 22.28174, lng: 114.154625},
                 {lat: 22.281651, lng: 114.154631},
                 {lat: 22.281599, lng: 114.154617},
                 {lat: 22.281544, lng: 114.154633},
@@ -375,7 +375,7 @@ function initMap(callback) {
                 {lat: 22.28145, lng: 114.153593},
                 {lat: 22.281427, lng: 114.153641}]}
 
-];
+    ];
 
     // Draw polygon for each triangle
     triangles.forEach((triangle) => {
@@ -498,4 +498,3 @@ function convertMetersToDegrees(gridSize) {
 
     return { lat: gridSizeLat, lng: gridSizeLng };
 }
-
