@@ -261,10 +261,10 @@ function initMap(callback) {
 
         if (type === 'new') {
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.description}</p>`;
-            image.src = `/resources/static/New/${street.name}.png`.replace(/\s/g, '%20');
+            image.src = `New${street.name}.png`.replace(/\s/g, '%20');
         } else { // Assuming 'history' is the type
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.history || 'Historical information not available.'}</p>`;
-            image.src = `/resources/static/History/${street.name}.jpg`.replace(/\s/g, '%20');
+            image.src = `History${street.name}.jpg`.replace(/\s/g, '%20');
         }
 
         // Refresh the infowindow to adjust to new content size
@@ -291,7 +291,7 @@ function initMap(callback) {
 
         polyline.addListener('click', (event) => {
             const streetNameSanitized = street.name.replace(/\s+/g, '');
-            let imagePathNew = `/resources/static/New/${street.name}.png`.replace(/\s/g, '%20');
+            let imagePathNew = `New/${street.name}.png`.replace(/\s/g, '%20');
             let contentString = `
 <div id="content-${streetNameSanitized}" style="max-width: 300px;">
     <img id="image-${streetNameSanitized}" src="${imagePathNew}" alt="Image of ${street.name}" style="width:100%; height:auto; object-fit: contain;">
@@ -319,10 +319,12 @@ function initMap(callback) {
         const descriptionDiv = document.getElementById(`description-${streetNameSanitized}`);
 
         if (type === 'new') {
-            imageElement.src = `/resources/static/New/${street.name}.png`.replace(/\s/g, '%20');
+            imageElement.src = imageElement.src = `New/${street.name}.png`.replace(/\s/g, ' ');
+
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.description}</p>`;
         } else {
-            imageElement.src = `/resources/static/History/${street.name}.jpg`.replace(/\s/g, '%20');
+            imageElement.src = imageElement.src = `History/${street.name}.jpg`.replace(/\s/g, ' ');
+
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.history || 'Historical information not available.'}</p>`;
         }
 
