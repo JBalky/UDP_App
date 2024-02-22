@@ -261,7 +261,7 @@ function initMap(callback) {
 
         if (type === 'new') {
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.description}</p>`;
-            image.src = `New${street.name}.png`.replace(/\s/g, '%20');
+            image.src = `../../../docs/New${street.name}.png`.replace(/\s/g, '%20');
         } else { // Assuming 'history' is the type
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.history || 'Historical information not available.'}</p>`;
             image.src = `History${street.name}.jpg`.replace(/\s/g, '%20');
@@ -291,7 +291,7 @@ function initMap(callback) {
 
         polyline.addListener('click', (event) => {
             const streetNameSanitized = street.name.replace(/\s+/g, '');
-            let imagePathNew = `New/${street.name}.png`.replace(/\s/g, '%20');
+            let imagePathNew = `../../../docs/New/${street.name}.png`.replace(/\s/g, '%20');
             let contentString = `
 <div id="content-${streetNameSanitized}" style="max-width: 300px;">
     <img id="image-${streetNameSanitized}" src="${imagePathNew}" alt="Image of ${street.name}" style="width:100%; height:auto; object-fit: contain;">
@@ -319,11 +319,11 @@ function initMap(callback) {
         const descriptionDiv = document.getElementById(`description-${streetNameSanitized}`);
 
         if (type === 'new') {
-            imageElement.src = imageElement.src = `New/${street.name}.png`.replace(/\s/g, ' ');
+            imageElement.src = imageElement.src = `../../../docs/New/${street.name}.png`.replace(/\s/g, ' ');
 
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.description}</p>`;
         } else {
-            imageElement.src = imageElement.src = `History/${street.name}.jpg`.replace(/\s/g, ' ');
+            imageElement.src = imageElement.src = `../../../docs/History/${street.name}.jpg`.replace(/\s/g, ' ');
 
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.history || 'Historical information not available.'}</p>`;
         }
