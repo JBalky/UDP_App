@@ -299,7 +299,7 @@ function initMap(callback) {
         <h3>${street.name}</h3>
         <p>${street.description}</p>
     </div>
-    <button onclick="window.toggleDescription('${streetNameSanitized}', 'new')">Now</button>
+    <button onclick="window.toggleDescription('${streetNameSanitized}', 'new')">Current</button>
     <button onclick="window.toggleDescription('${streetNameSanitized}', 'history')">History</button>
 </div>`;
 
