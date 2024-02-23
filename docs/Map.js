@@ -261,10 +261,10 @@ function initMap(callback) {
 
         if (type === 'new') {
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.description}</p>`;
-            image.src = `../../../docs/New${street.name}.png`.replace(/\s/g, '%20');
+            image.src = `./New/${street.name}.png`.replace(/\s/g, '%20');
         } else { // Assuming 'history' is the type
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.history || 'Historical information not available.'}</p>`;
-            image.src = `History${street.name}.jpg`.replace(/\s/g, '%20');
+            image.src = `./History/${street.name}.jpg`.replace(/\s/g, '%20');
         }
 
         // Refresh the infowindow to adjust to new content size
@@ -291,7 +291,7 @@ function initMap(callback) {
 
         polyline.addListener('click', (event) => {
             const streetNameSanitized = street.name.replace(/\s+/g, '');
-            let imagePathNew = `../../../docs/New/${street.name}.png`.replace(/\s/g, '%20');
+            let imagePathNew = `./New/${street.name}.png`.replace(/\s/g, '%20');
             let contentString = `
 <div id="content-${streetNameSanitized}" style="max-width: 300px;">
     <img id="image-${streetNameSanitized}" src="${imagePathNew}" alt="Image of ${street.name}" style="width:100%; height:auto; object-fit: contain;">
@@ -319,11 +319,11 @@ function initMap(callback) {
         const descriptionDiv = document.getElementById(`description-${streetNameSanitized}`);
 
         if (type === 'new') {
-            imageElement.src = imageElement.src = `../../../docs/New/${street.name}.png`.replace(/\s/g, ' ');
+            imageElement.src = imageElement.src = `./New/${street.name}.png`.replace(/\s/g, '%20');
 
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.description}</p>`;
         } else {
-            imageElement.src = imageElement.src = `../../../docs/History/${street.name}.jpg`.replace(/\s/g, ' ');
+            imageElement.src = imageElement.src = `./History/${street.name}.jpg`.replace(/\s/g, '%20');
 
             descriptionDiv.innerHTML = `<h3>${street.name}</h3><p>${street.history || 'Historical information not available.'}</p>`;
         }
@@ -493,7 +493,7 @@ function calculateAndDisplayRoute() {
 // Helper function to convert meters to latitude and longitude degrees
 function convertMetersToDegrees(gridSize) {
     const earthCircumference = 40075017; // in meters, around the equator
-    const metersPerDegree = earthCircumference / 360; // meters per degree
+    const metersPerDegrees = earthCircumference / 360; // meters per degree
 
     const gridSizeLat = gridSize / metersPerDegree; // grid size in latitude degrees
     const gridSizeLng = gridSize / (metersPerDegree * Math.cos(startPoint.lat() * (Math.PI / 180))); // adjust for longitude
