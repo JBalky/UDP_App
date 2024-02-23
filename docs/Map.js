@@ -7,7 +7,7 @@ let streetRankings = [];
 function initMap(callback) {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 22.282890, lng: 114.153694 },
-        zoom: 17,
+        zoom: 15,
     });
 
     directionsService = new google.maps.DirectionsService();
